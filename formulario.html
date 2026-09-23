@@ -22,21 +22,42 @@
 
     <!-- Navegación -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- Logo actualizado apuntando a la carpeta images -->
+                
+                <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="index.html">
                         <img src="images/logo-KMAN-Multiservicios.png" alt="KMAN Multiservicios" class="h-12 md:h-14 w-auto object-contain hover:opacity-90 transition">
                     </a>
                 </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-500 hover:text-blue-600 transition">Inicio</a>
-                    <a href="quienessomos.html" class="text-gray-500 hover:text-blue-600 transition">Quiénes Somos</a>
-                    <a href="index.html#servicios" class="text-gray-500 hover:text-blue-600 transition">Servicios</a>
-                    <a href="condominios.html" class="text-gray-500 hover:text-blue-600 transition">Administración</a>
-                    <a href="#" class="text-blue-700 font-bold hover:text-blue-800 transition border-b-2 border-blue-600 pb-1">Contacto</a>
+                
+                <!-- Menú Desktop -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-blue-700 font-bold hover:text-blue-800 transition border-b-2 border-blue-600 pb-1">Inicio</a>
+                    <a href="quienessomos.html" class="text-gray-500 hover:text-blue-600 transition font-medium">Quiénes Somos</a>
+                    <a href="#servicios" class="text-gray-500 hover:text-blue-600 transition font-medium">Servicios</a>
+                    <a href="condominios.html" class="text-gray-500 hover:text-blue-600 transition font-medium">Administración</a>
+                    <a href="formulario.html" class="bg-blue-600 text-white px-5 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Contacto</a>
                 </nav>
+
+                <!-- Botón Menú Mobile (Hamburguesa) -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 focus:outline-none p-2 rounded-lg hover:bg-blue-50 transition">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú Mobile (Desplegable) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-2xl z-40">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="index.html" class="block px-4 py-3 text-blue-700 font-bold bg-blue-50 rounded-xl">Inicio</a>
+                <a href="quienessomos.html" class="block px-4 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-700 rounded-xl font-medium transition">Quiénes Somos</a>
+                <a href="#servicios" class="mobile-link block px-4 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-700 rounded-xl font-medium transition">Servicios</a>
+                <a href="condominios.html" class="block px-4 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-700 rounded-xl font-medium transition">Administración</a>
+                <a href="formulario.html" class="mobile-link block px-4 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-700 rounded-xl font-medium transition">Contacto</a>
             </div>
         </div>
     </header>
@@ -278,5 +299,34 @@
         <p class="text-gray-500 text-sm">Evaluaciones presenciales directas para presupuestos transparentes.</p>
     </footer>
 
+
+    <script>
+        
+        // Lógica del menú móvil
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = btn.querySelector('i');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        // Ocultar menú móvil al hacer clic en enlaces de anclaje interno (#servicios, #contacto)
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+    </script>
 </body>
 </html>
