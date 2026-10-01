@@ -416,6 +416,99 @@
         </div>
     </section>
 
+<!-- Sección de Galería de Proyectos / Trabajos Realizados -->
+<section id="galeria" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Encabezado de la Sección -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-blue-600 font-bold uppercase tracking-wider text-xs bg-blue-100 px-3 py-1 rounded-full">Nuestro Trabajo</span>
+            <h2 class="text-3xl lg:text-4xl font-black text-slate-900 mt-3 mb-4">Galería de Proyectos</h2>
+            <p class="text-gray-600 text-lg">Una muestra visual de la calidad, el detalle y el profesionalismo en cada intervención realizada.</p>
+        </div>
+
+        <!-- Botones de Filtro (Opcional interactivo) -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12">
+            <button onclick="filterGallery('all')" class="gallery-btn active-filter bg-blue-600 text-white font-bold px-6 py-2.5 rounded-xl text-sm transition shadow-sm">Todos</button>
+            <button onclick="filterGallery('pisos')" class="gallery-btn bg-white text-slate-700 hover:bg-blue-50 font-bold px-6 py-2.5 rounded-xl text-sm transition border border-gray-200">Pisos y Superficies</button>
+            <button onclick="filterGallery('industrial')" class="gallery-btn bg-white text-slate-700 hover:bg-blue-50 font-bold px-6 py-2.5 rounded-xl text-sm transition border border-gray-200">Industrial y Cocinas</button>
+            <button onclick="filterGallery('fachadas')" class="gallery-btn bg-white text-slate-700 hover:bg-blue-50 font-bold px-6 py-2.5 rounded-xl text-sm transition border border-gray-200">Fachadas y Alturas</button>
+        </div>
+
+        <!-- Grid de la Galería (Bento Grid Visual) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Item 1: Pisos -->
+            <div class="gallery-item pisos group relative h-80 rounded-[2.5rem] overflow-hidden shadow-md bg-white border border-gray-100 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Pulido de Pisos" 
+                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <span class="text-blue-400 font-bold text-xs uppercase tracking-wider mb-1">Pisos y Superficies</span>
+                    <h3 class="text-white font-black text-xl">Pulido y Cristalizado de Mármol</h3>
+                </div>
+            </div>
+
+            <!-- Item 2: Industrial -->
+            <div class="gallery-item industrial group relative h-80 rounded-[2.5rem] overflow-hidden shadow-md bg-white border border-gray-100 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Limpieza Industrial" 
+                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <span class="text-blue-400 font-bold text-xs uppercase tracking-wider mb-1">Industrial y Cocinas</span>
+                    <h3 class="text-white font-black text-xl">Mantenimiento de Naves y Estructuras</h3>
+                </div>
+            </div>
+
+            <!-- Item 3: Fachadas -->
+            <div class="gallery-item fachadas group relative h-80 rounded-[2.5rem] overflow-hidden shadow-md bg-white border border-gray-100 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Lavado de Fachadas" 
+                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <span class="text-blue-400 font-bold text-xs uppercase tracking-wider mb-1">Fachadas y Alturas</span>
+                    <h3 class="text-white font-black text-xl">Limpieza de Cristales en Altura</h3>
+                </div>
+            </div>
+
+            <!-- Item 4: Pisos -->
+            <div class="gallery-item pisos group relative h-80 rounded-[2.5rem] overflow-hidden shadow-md bg-white border border-gray-100 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Lavado de Pisos" 
+                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <span class="text-blue-400 font-bold text-xs uppercase tracking-wider mb-1">Pisos y Superficies</span>
+                    <h3 class="text-white font-black text-xl">Lavado Técnico de Porcelanato</h3>
+                </div>
+            </div>
+
+            <!-- Item 5: Industrial -->
+            <div class="gallery-item industrial group relative h-80 rounded-[2.5rem] overflow-hidden shadow-md bg-white border border-gray-100 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Cocinas Industriales" 
+                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <span class="text-blue-400 font-bold text-xs uppercase tracking-wider mb-1">Industrial y Cocinas</span>
+                    <h3 class="text-white font-black text-xl">Desengrasado de Cocinas Comerciales</h3>
+                </div>
+            </div>
+
+            <!-- Item 6: Fachadas -->
+            <div class="gallery-item fachadas group relative h-80 rounded-[2.5rem] overflow-hidden shadow-md bg-white border border-gray-100 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1541888946425-d0fbb176c6f7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Post Construcción" 
+                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <span class="text-blue-400 font-bold text-xs uppercase tracking-wider mb-1">Fachadas y Alturas</span>
+                    <h3 class="text-white font-black text-xl">Acondicionamiento Post-Construcción</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
     <!-- Footer Clásico -->
     <footer id="contacto" class="bg-slate-900 text-white pt-20 pb-10 border-t border-slate-800 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
@@ -596,6 +689,30 @@
                 document.body.style.overflow = 'auto';
             }
         }
+
+// Lógica de filtrado de la galería
+    function filterGallery(category) {
+        const items = document.querySelectorAll('.gallery-item');
+        const buttons = document.querySelectorAll('.gallery-btn');
+
+        // Cambiar estilos de los botones de filtro
+        buttons.forEach(btn => {
+            btn.classList.remove('bg-blue-600', 'text-white', 'shadow-sm');
+            btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-gray-200');
+        });
+        event.target.classList.remove('bg-white', 'text-slate-700', 'border', 'border-gray-200');
+        event.target.classList.add('bg-blue-600', 'text-white', 'shadow-sm');
+
+        // Mostrar u ocultar elementos según la categoría seleccionada
+        items.forEach(item => {
+            if (category === 'all' || item.classList.contains(category)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
     </script>
 </body>
 </html>
