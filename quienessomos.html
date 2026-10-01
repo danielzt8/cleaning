@@ -51,30 +51,45 @@
         </div>
     </header>
 
-    <!-- Hero Section (Split Layout) -->
-    <section class="relative bg-slate-50">
-        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
-            <div class="w-full lg:w-1/2 p-8 lg:p-20 text-center lg:text-left">
-                <div class="inline-block bg-blue-100 text-blue-700 font-semibold px-4 py-1 rounded-full text-sm mb-6">Conócenos</div>
-                <h1 class="text-4xl md:text-5xl font-black text-slate-900 leading-tight mb-6">
-                    Soluciones a los proyectos con <span class="text-blue-600 relative">asesoramiento exclusivo
-                        <svg class="absolute w-full h-3 -bottom-1 left-0 text-blue-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="8" fill="none"/></svg>
-                    </span>
+<!-- Hero Visual e Inmersivo - Quiénes Somos -->
+<section class="py-10 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Contenedor Principal (Imagen gigante con bordes redondeados) -->
+        <div class="relative w-full rounded-[3rem] overflow-hidden min-h-[60vh] md:min-h-[500px] flex flex-col items-center justify-center text-center shadow-2xl">
+            
+            <!-- Imagen de fondo de alta calidad -->
+            <img src="https://images.pexels.com/photos/6195274/pexels-photo-6195274.jpeg" 
+                 alt="Conócenos KMAN Multiservicios" 
+                 class="absolute inset-0 w-full h-full object-cover">
+            
+            <!-- Capa oscura con degradado para garantizar la legibilidad del texto -->
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/50 to-slate-900/80"></div>
+            
+            <!-- Contenido Minimalista y Centrado -->
+            <div class="relative z-10 px-6 max-w-4xl mx-auto mt-8">
+                <!-- Badge Glassmorphism (Transparente) -->
+                <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white font-semibold px-5 py-2 rounded-full text-sm mb-6 border border-white/30">
+                    <i class="fas fa-users"></i> Quiénes Somos
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.15] mb-6 tracking-tight">
+                    Soluciones a los proyectos con <br class="hidden md:block">
+                    <span class="text-blue-400">asesoramiento exclusivo</span>
                 </h1>
-                <p class="text-lg text-gray-600 mb-8 border-l-4 border-blue-600 pl-4">
-                    Siempre en función de sus necesidades. Si necesita que le ampliemos información sobre alguno de nuestros servicios, puede contactar con nosotros.
+                
+                <p class="text-lg md:text-xl text-gray-200 font-light max-w-2xl mx-auto">
+                    Siempre en función de sus necesidades, garantizando la máxima calidad y atención en cada detalle.
                 </p>
-                <a href="#contacto" class="bg-slate-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 inline-flex items-center gap-2">
-                    Consulta y Asesoría <i class="fas fa-arrow-right"></i>
-                </a>
             </div>
-            <!-- Imagen Placeholder -->
-            <div class="w-full lg:w-1/2 min-h-[400px] bg-[url('https://images.unsplash.com/photo-1556761175-5973dc0f32d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center">
-                <!-- Capa oscura opcional -->
-                <div class="w-full h-full bg-blue-900/20"></div>
+
+            <!-- Indicador sutil para invitar a hacer scroll hacia abajo -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white/50 hover:text-white transition cursor-pointer">
+                <i class="fas fa-chevron-down text-2xl"></i>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
   <!-- Misión, Visión y Valores (Bento Grid Estilizado) -->
     <section class="py-24 bg-gray-50 border-t border-gray-100">
