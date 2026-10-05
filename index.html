@@ -508,6 +508,187 @@
     </div>
 </section>
 
+<!-- Sección: Administración (Opción Pestañas Interactivas) -->
+<section id="administracion" class="py-24 bg-white scroll-mt-20 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Encabezado -->
+        <div class="text-center max-w-4xl mx-auto mb-16">
+            <span class="text-blue-600 font-bold uppercase tracking-wider text-xs bg-blue-50 px-3 py-1 rounded-full">División Inmobiliaria</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mt-4 mb-6 leading-tight">
+                Gestión y Administración Integral de <br class="hidden lg:block"> 
+                <span class="text-blue-600">Condominios y Plazas Comerciales</span>
+            </h2>
+            <p class="text-gray-600 text-lg leading-relaxed">
+                Transformamos la administración de su inmueble en una experiencia de tranquilidad, eficiencia y revalorización patrimonial mediante 7 pilares fundamentales de gestión.
+            </p>
+        </div>
+
+        <!-- Contenedor Interactivo (Menú + Contenido) -->
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
+            
+            <!-- Menú Lateral (Pestañas) -->
+            <div class="w-full lg:w-1/3 flex flex-col gap-2 overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 scrollbar-hide">
+                <div class="flex lg:flex-col gap-2 min-w-max lg:min-w-0">
+                    <button onclick="changeAdminTab('pilares', this)" class="admin-tab-btn active text-left px-6 py-4 rounded-2xl font-bold transition-all duration-300 flex items-center gap-3 bg-blue-600 text-white shadow-lg border-transparent">
+                        <i class="fas fa-clipboard-check w-5 text-center"></i> Pilares Administrativos
+                    </button>
+                    <button onclick="changeAdminTab('financiera', this)" class="admin-tab-btn text-left px-6 py-4 rounded-2xl font-bold transition-all duration-300 flex items-center gap-3 bg-slate-50 text-slate-600 hover:bg-slate-100 border border-transparent hover:border-slate-200">
+                        <i class="fas fa-sack-dollar w-5 text-center"></i> Gestión Financiera
+                    </button>
+                    <button onclick="changeAdminTab('legal', this)" class="admin-tab-btn text-left px-6 py-4 rounded-2xl font-bold transition-all duration-300 flex items-center gap-3 bg-slate-50 text-slate-600 hover:bg-slate-100 border border-transparent hover:border-slate-200">
+                        <i class="fas fa-balance-scale w-5 text-center"></i> Legales y Laborales
+                    </button>
+                    <button onclick="changeAdminTab('tecnico', this)" class="admin-tab-btn text-left px-6 py-4 rounded-2xl font-bold transition-all duration-300 flex items-center gap-3 bg-slate-50 text-slate-600 hover:bg-slate-100 border border-transparent hover:border-slate-200">
+                        <i class="fas fa-tools w-5 text-center"></i> Mantenimiento Técnico
+                    </button>
+                    <button onclick="changeAdminTab('seguridad', this)" class="admin-tab-btn text-left px-6 py-4 rounded-2xl font-bold transition-all duration-300 flex items-center gap-3 bg-slate-50 text-slate-600 hover:bg-slate-100 border border-transparent hover:border-slate-200">
+                        <i class="fas fa-shield-halved w-5 text-center"></i> Seguridad Patrimonial
+                    </button>
+                    <button onclick="changeAdminTab('eco', this)" class="admin-tab-btn text-left px-6 py-4 rounded-2xl font-bold transition-all duration-300 flex items-center gap-3 bg-slate-50 text-slate-600 hover:bg-slate-100 border border-transparent hover:border-slate-200">
+                        <i class="fas fa-leaf w-5 text-center"></i> Eco-Eficiencia
+                    </button>
+                    <button onclick="changeAdminTab('supervision', this)" class="admin-tab-btn text-left px-6 py-4 rounded-2xl font-bold transition-all duration-300 flex items-center gap-3 bg-slate-50 text-slate-600 hover:bg-slate-100 border border-transparent hover:border-slate-200">
+                        <i class="fas fa-magnifying-glass-chart w-5 text-center"></i> Supervisión Continua
+                    </button>
+                </div>
+            </div>
+
+            <!-- Área de Contenido Central -->
+            <div class="w-full lg:w-2/3">
+                <div class="bg-slate-50 border border-slate-100 rounded-[2.5rem] p-8 md:p-12 shadow-sm min-h-[400px]">
+                    
+                    <!-- Contenido 1: Pilares -->
+                    <div id="tab-pilares" class="admin-content block animate-fade-in">
+                        <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-6">Pilares de Nuestros Servicios Administrativos</h3>
+                        <ul class="space-y-4 text-slate-700">
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-blue-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Aplicación y respeto del reglamento del condominio y acuerdos de asamblea.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-blue-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Control, gestión y cobranza eficiente de las cuotas de mantenimiento.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-blue-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Elaboración, ejecución y administración del presupuesto anual.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-blue-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Uso de plataforma o software de gestión para transparencia en tiempo real.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-blue-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Evaluación, selección y contratación de proveedores calificados.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-blue-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Gestión de reservas de áreas comunes y manejo profesional de conflictos.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-blue-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Realización de reuniones periódicas con la directiva del condominio.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contenido 2: Financiera -->
+                    <div id="tab-financiera" class="admin-content hidden animate-fade-in">
+                        <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                            <i class="fas fa-sack-dollar"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-6">Gestión Financiera y Fiscal</h3>
+                        <ul class="space-y-4 text-slate-700">
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-emerald-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Control absoluto de nómina y optimización en el uso de los fondos.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-emerald-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Pago puntual de servicios básicos (agua, energía, basura).</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-emerald-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Movimientos contables, conciliaciones y presentación de informes mensuales.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-emerald-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Elaboración de presupuestos estratégicos para mejoras de infraestructura.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-emerald-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Cumplimiento fiscal (DGII) y presentación de Estados Financieros Auditados.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contenido 3: Legal -->
+                    <div id="tab-legal" class="admin-content hidden animate-fade-in">
+                        <div class="w-16 h-16 bg-slate-200 text-slate-800 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-6">Gestiones Legales y Laborales</h3>
+                        <ul class="space-y-4 text-slate-700">
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-slate-800 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Constitución legal del condominio, gestión de RNC y apertura de cuenta.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-slate-800 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Redacción de reglamento interno y actas de asamblea (Registro en ADN).</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-slate-800 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Declaraciones ante el Ministerio de Trabajo y reporte DGII.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-slate-800 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Gestión de cobros prejudiciales a propietarios morosos.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-slate-800 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Gestión de RRHH: Contratos, TSS, planillas, prestaciones y demandas.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contenido 4: Técnico -->
+                    <div id="tab-tecnico" class="admin-content hidden animate-fade-in">
+                        <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-6">Mantenimiento Técnico y Operativo</h3>
+                        <ul class="space-y-4 text-slate-700">
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-amber-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span><strong>Superficies:</strong> Limpieza especializada, pintura, cristalería y fachadas.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-amber-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span><strong>Instalaciones:</strong> Ascensores, generadores, bombeo y aire acondicionado.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-amber-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span><strong>Sanitaria:</strong> Fumigación, piscinas, cisternas, trampas de grasa y sépticos.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-amber-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span><strong>Emergencia:</strong> Extintores, sistemas de extracción de aire y combustible.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-amber-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span><strong>Oficios Generales:</strong> Plomería, electricidad general y herrería.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contenido 5: Seguridad -->
+                    <div id="tab-seguridad" class="admin-content hidden animate-fade-in">
+                        <div class="w-16 h-16 bg-rose-100 text-rose-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-6">Seguridad y Protección Patrimonial</h3>
+                        <ul class="space-y-4 text-slate-700">
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-rose-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Elaboración del manual interno de seguridad y protocolos de evacuación.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-rose-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Control estricto y registro de visitantes y proveedores.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-rose-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Vigilancia 24/7 física y a través de sistemas de circuito cerrado (CCTV).</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-rose-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Entrenamiento continuo al personal y señalización de áreas comunes.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-rose-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Evaluación constante de riesgos y adopción de medidas preventivas.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contenido 6: Eco-Eficiencia -->
+                    <div id="tab-eco" class="admin-content hidden animate-fade-in">
+                        <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-6">Eco-Eficiencia y Sostenibilidad</h3>
+                        <ul class="space-y-4 text-slate-700">
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-emerald-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Revisión y diagnóstico de parámetros de consumo de equipos e iluminación.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-emerald-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Optimización del uso racional del agua y energía eléctrica.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-emerald-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Manejo adecuado de los desechos sólidos, mejorando la imagen del edificio.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-emerald-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Capacitación y concientización a personal, propietarios e inquilinos.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contenido 7: Supervisión -->
+                    <div id="tab-supervision" class="admin-content hidden animate-fade-in">
+                        <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                            <i class="fas fa-magnifying-glass-chart"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-900 mb-6">Supervisión y Control Continuo</h3>
+                        <ul class="space-y-4 text-slate-700">
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-indigo-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Inspecciones recurrentes en el edificio varias veces a la semana.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-indigo-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Supervisión directa de los trabajos realizados por el personal y proveedores.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check text-indigo-600 mt-1 bg-white p-1 rounded-full shadow-sm"></i> <span>Control del cumplimiento de las normas de convivencia y decoro del edificio.</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Añade este CSS personalizado en tu etiqueta <style> -->
+<style>
+    .animate-fade-in {
+        animation: fadeIn 0.4s ease-in-out;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    /* Ocultar barra de scroll en móviles para los botones de las pestañas */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
+
+
+
 <!-- Sección de Contacto y Solicitud de Visita -->
 <footer id="contacto" class="py-24 bg-slate-900 text-white relative overflow-hidden scroll-mt-20">
     <!-- Círculo decorativo de fondo -->
@@ -750,6 +931,29 @@
                 item.style.display = 'none';
             }
         });
+    }
+
+
+    // Lógica de cambio de pestañas en la sección de administración
+
+    function changeAdminTab(tabId, btnElement) {
+        // 1. Ocultar todos los contenidos
+        const contents = document.querySelectorAll('.admin-content');
+        contents.forEach(content => content.classList.add('hidden'));
+
+        // 2. Mostrar el contenido seleccionado
+        document.getElementById('tab-' + tabId).classList.remove('hidden');
+
+        // 3. Resetear estilos de todos los botones
+        const buttons = document.querySelectorAll('.admin-tab-btn');
+        buttons.forEach(btn => {
+            btn.classList.remove('bg-blue-600', 'text-white', 'shadow-lg');
+            btn.classList.add('bg-slate-50', 'text-slate-600');
+        });
+
+        // 4. Aplicar estilos activos al botón presionado
+        btnElement.classList.remove('bg-slate-50', 'text-slate-600');
+        btnElement.classList.add('bg-blue-600', 'text-white', 'shadow-lg');
     }
 
     </script>
