@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Detallados - KMAN Multiservicios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .scroll-mt-24 { scroll-margin-top: 6rem; }
+    </style>
+</head>
+<body class="font-sans antialiased text-slate-800 bg-slate-50 relative">
+
+    <!-- Navegación -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html">
+                        <img src="images/logo-KMAN-Multiservicios.png" alt="KMAN Multiservicios" class="h-12 md:h-14 w-auto object-contain hover:opacity-90 transition">
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-500 hover:text-blue-600 transition font-medium">Inicio</a>
+                    <a href="quienessomos.html" class="text-gray-500 hover:text-blue-600 transition font-medium">Quiénes Somos</a>
+                    <a href="servicios.html" class="text-blue-700 font-bold hover:text-blue-800 transition border-b-2 border-blue-600 pb-1">Servicios</a>
+                    <a href="condominios.html" class="text-gray-500 hover:text-blue-600 transition font-medium">Administración</a>
+                    <a href="contacto.html" class="bg-blue-600 text-white px-5 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Servicios) -->
+    <section class="relative bg-slate-900 py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-1/2 -right-1/4 w-full h-full bg-blue-600/20 blur-3xl rounded-full"></div>
+            <div class="absolute -bottom-1/2 -left-1/4 w-full h-full bg-teal-600/10 blur-3xl rounded-full"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block bg-blue-500/20 text-blue-300 border border-blue-400/30 font-bold px-4 py-1.5 rounded-full text-xs uppercase tracking-wider mb-6">
+                Catálogo Profesional
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight leading-tight">
+                Servicios de Mantenimiento <br> <span class="text-blue-400">y Limpieza Profesional</span>
+            </h1>
+            <p class="text-lg text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">
+                Soluciones integrales, especializadas y adaptadas a las exigencias operativas de su empresa, condominio o residencia.
+            </p>
+        </div>
+    </section>
+
+    <!-- Catálogo Detallado (Bento Grid) -->
+    <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- ================= BLOQUE 1: SERVICIOS CORE (Tarjetas Grandes con Listas) ================= -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            
+            <!-- 1. Conserjería -->
+            <div id="conserjeria" class="bg-white p-8 lg:p-12 rounded-[2.5rem] border border-gray-100 shadow-sm hover:shadow-xl transition duration-300 scroll-mt-24">
+                <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                    <i class="fa-solid fa-wrench"></i>
+                </div>
+                <h2 class="text-2xl font-black text-slate-900 mb-3">1. Gestión de Conserjería y Mantenimiento Continuo</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">Asegura el cuidado diario y la operatividad impecable de tus instalaciones con personal altamente capacitado y supervisado.</p>
+                
+                <ul class="space-y-4 text-sm text-slate-700">
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Empresarial, Industrial e Institucional:</strong> 
+                            Personal calificado para la gestión y cuidado diario de instalaciones.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Programas de Aseo y Mantenimiento:</strong> 
+                            Rutinas personalizadas ajustadas al flujo (horarios diurnos y nocturnos).
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Servicios por Iguala Institucional:</strong> 
+                            Cobertura continua y contratos integrales para oficinas, clínicas y colegios.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-blue-600 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Servicio Doméstico por Día:</strong> 
+                            Apoyo puntual y flexible para residencias y espacios privados.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 2. Limpieza Especializada -->
+            <div id="limpieza" class="bg-white p-8 lg:p-12 rounded-[2.5rem] border border-gray-100 shadow-sm hover:shadow-xl transition duration-300 scroll-mt-24">
+                <div class="w-16 h-16 bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                    <i class="fas fa-pump-soap"></i>
+                </div>
+                <h2 class="text-2xl font-black text-slate-900 mb-3">2. Limpieza Especializada y Profunda</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">Intervenciones exhaustivas para la puesta a punto y la bioseguridad de cualquier inmueble.</p>
+                
+                <ul class="space-y-4 text-sm text-slate-700">
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-teal-600 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Limpieza Diaria y Profunda:</strong> 
+                            Higienización exhaustiva de áreas operativas, administrativas y de alto tráfico.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-teal-600 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Desinfección de Áreas Críticas:</strong> 
+                            Protocolos de sanitización y descontaminación para espacios de alto riesgo microbiológico.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-teal-600 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Post-Construcción y Mudanzas:</strong> 
+                            Eliminación de polvo fino, residuos de obra, restos de pintura y alistamiento final.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-teal-600 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Limpieza para Eventos:</strong> 
+                            Operativos de acondicionamiento antes, durante y después de actividades.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 3. Pisos -->
+            <div id="pisos" class="bg-white p-8 lg:p-12 rounded-[2.5rem] border border-gray-100 shadow-sm hover:shadow-xl transition duration-300 scroll-mt-24">
+                <div class="w-16 h-16 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h2 class="text-2xl font-black text-slate-900 mb-3">3. Pisos, Superficies y Restauración</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">Recupera la elegancia, el brillo natural y la durabilidad de tus superficies.</p>
+                
+                <ul class="space-y-4 text-sm text-slate-700">
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-amber-500 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Tratamientos de Alto Brillo:</strong> 
+                            Pulido y diamantado de precisión, brillado y cristalizado de mármol/granito, vitrificado de madera.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-amber-500 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Restauración y Reparación:</strong> 
+                            Recuperación de pisos deteriorados, reparación de cemento, acondicionamiento de parqueos e impermeabilización.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-amber-500 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Limpieza Técnica y Lavado:</strong> 
+                            Lavado especializado de cerámica, porcelanato, coralina y hormigón industrial.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-amber-500 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Instalación de Revestimientos:</strong> 
+                            Colocación profesional de cerámica, porcelanato, mármol, coralina y granito.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 4. Estructuras y Cocinas -->
+            <div id="estructuras" class="bg-white p-8 lg:p-12 rounded-[2.5rem] border border-gray-100 shadow-sm hover:shadow-xl transition duration-300 scroll-mt-24">
+                <div class="w-16 h-16 bg-slate-800 text-white rounded-2xl flex items-center justify-center text-3xl mb-6">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h2 class="text-2xl font-black text-slate-900 mb-3">4. Estructuras, Alturas y Cocinas</h2>
+                <p class="text-gray-600 mb-8 leading-relaxed">Soluciones técnicas especializadas para edificaciones complejas y áreas de alta exigencia.</p>
+                
+                <ul class="space-y-4 text-sm text-slate-700">
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-slate-800 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Limpieza de Cristales y Ventanas:</strong> 
+                            Acabados impecables en interiores y exteriores sin residuos.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-slate-800 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Fachadas y Trabajos en Altura:</strong> 
+                            Mantenimiento exterior seguro en edificaciones, naves y paneles de aluminio.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-slate-800 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Naves y Grandes Superficies:</strong> 
+                            Limpieza técnica de techos, paredes, estructuras, almacenes y parqueos.
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl">
+                        <i class="fas fa-check-circle text-slate-800 mt-1"></i>
+                        <div>
+                            <strong class="block text-slate-900 mb-1">Higienización de Cocinas Industriales:</strong> 
+                            Desengrasado de campanas, ductos, hornos y desinfección de cuartos fríos (Cumplimiento normativo).
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ================= BLOQUE 2: SERVICIOS SECUNDARIOS (Tarjetas Medianas) ================= -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            
+            <!-- 5. Pintura -->
+            <div id="pintura" class="bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-sm hover:shadow-xl transition duration-300 flex flex-col sm:flex-row gap-6 scroll-mt-24">
+                <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0">
+                    <i class="fas fa-paint-roller"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">5. Pintura y Fachadas</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-3">Renovamos y protegemos la estética interior y exterior de tus instalaciones.</p>
+                    <p class="text-sm text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <strong>Servicios:</strong> Pintura general, preparación de superficies, corrección de grietas, retoque y remozamiento de paredes con personal certificado en alturas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 6. Áreas Verdes -->
+            <div id="jardineria" class="bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-sm hover:shadow-xl transition duration-300 flex flex-col sm:flex-row gap-6 scroll-mt-24">
+                <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">6. Mantenimiento de Áreas Verdes</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-3">Aseguramos la salud, el desarrollo y la estética de tus espacios exteriores.</p>
+                    <p class="text-sm text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <strong>Servicios:</strong> Corte de césped, poda de árboles (control de riesgos), abonado, riego, deshierba y siembra de plantas ornamentales.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= BLOQUE 3: SERVICIOS ESPECÍFICOS (Tarjetas Compactas) ================= -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            
+            <!-- 7. Plagas -->
+            <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition text-center group">
+                <div class="w-14 h-14 bg-rose-50 text-rose-500 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fas fa-bug"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 mb-2">7. Saneamiento Ambiental y Control de Plagas</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Estrategias seguras para la prevención y control de plagas, garantizando entornos libres de riesgos sanitarios.</p>
+            </div>
+
+            <!-- 8. Piscinas -->
+            <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition text-center group">
+                <div class="w-14 h-14 bg-cyan-50 text-cyan-500 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fas fa-swimming-pool"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 mb-2">8. Limpieza e Instalación de Piscinas y Jacuzzis</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Tratamiento del agua, balance químico y mantenimiento de equipos para áreas recreativas cristalinas.</p>
+            </div>
+
+            <!-- 9. Sépticos -->
+            <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition text-center group">
+                <div class="w-14 h-14 bg-orange-50 text-orange-500 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <i class="fas fa-water">  </i>
+                </div>
+                <h4 class="font-bold text-slate-900 mb-2">9. Limpieza de Sépticos y Trampas de Grasa</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Servicio especializado de succión y mantenimiento preventivo de sistemas sanitarios y filtrantes.</p>
+            </div>
+        </div>
+
+        <!-- ================= BLOQUE 4: ADMINISTRACIÓN (Destacado Full Width) ================= -->
+        <div class="bg-slate-900 p-8 md:p-12 rounded-[2.5rem] shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600 opacity-20 rounded-full blur-3xl -mr-20 -mt-20"></div>
+            
+            <div class="relative z-10">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-xl flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-house fa-flip" style="--fa-animation-duration: 3s;"></i>
+                    </div>
+                    <span class="text-blue-400 font-bold tracking-wider text-sm">DIVISIÓN INMOBILIARIA</span>
+                </div>
+                <h3 class="text-2xl md:text-3xl font-black text-white mb-3">10. Gestión y Administración de Condominios</h3>
+                <p class="text-gray-300 ">
+                    En KMAN Multiservicios, transformamos la administración de su inmueble en una experiencia de tranquilidad, eficiencia y revalorización patrimonial. Basamos nuestro concepto en la planificación, organización, dirección y control rigurosos, garantizando soluciones a la medida para residenciales, torres y plazas comerciales.
+                </p>
+            </div>
+           
+        </div>
+
+    </section>
+
+    <!-- Call to Action Final -->
+    <section class="bg-blue-600 py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-black text-white mb-6">¿Necesita una evaluación para alguno de estos servicios?</h2>
+            <p class="text-blue-100 mb-8 text-lg">Realizamos levantamientos técnicos presenciales sin ningún compromiso para entregarle un presupuesto transparente.</p>
+            <a href="solicitud-visita.html" class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 px-10 rounded-2xl shadow-xl transition transform hover:-translate-y-1">
+                Solicitar Cotización Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+    <footer class="bg-slate-900 text-center py-8 border-t border-slate-800">
+        <p class="text-gray-400 text-sm mb-2">© 2026 KMAN Multiservicios. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
