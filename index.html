@@ -6,6 +6,15 @@
     <title>KMAN Multiservicios - Proveedores de Soluciones</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+    .animate-fade-in {
+        animation: fadeIn 0.3s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
 </head>
 <body class="font-sans antialiased text-slate-800 bg-white relative">
 
@@ -521,8 +530,135 @@
         </div>
     </section>
 
-    <!-- Conceptos de Nuestros Servicios -->
-    <section class="py-24 bg-white">
+
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl lg:text-4xl font-black text-slate-900 mb-4">Conceptos de Nuestros Servicios</h2>
+            <p class="text-gray-600 text-lg">Los pilares que garantizan la excelencia operativa de KMAN.</p>
+        </div>
+
+        <!-- Se añadió 'items-start' para que las tarjetas no se estiren al abrir una -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+            
+            <!-- Tarjeta 01 -->
+            <div class="concept-card bg-gray-50 rounded-3xl border border-gray-100 shadow-sm relative overflow-hidden transition-all duration-300">
+                <button onclick="toggleConcept(this)" class="w-full text-left p-6 flex items-center justify-between z-10 relative cursor-pointer focus:outline-none group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl font-black text-blue-200 group-hover:text-blue-400 transition-colors">01</span>
+                        <h3 class="text-lg font-bold text-slate-900">Garantía de Calidad</h3>
+                    </div>
+                    <div class="concept-icon w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 transition-colors duration-300">
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                </button>
+                <div class="concept-content hidden px-6 pb-6 animate-fade-in">
+                    <p class="text-gray-600 text-sm border-t border-gray-200 pt-4">En KMAN Multiservicios, aseguramos el uso de maquinaria especializada y productos de la más alta eficacia, seleccionados meticulosamente para cada tipo de intervención. Entregamos soluciones innovadoras que se ajustan con precisión a las necesidades de sus instalaciones.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 02 -->
+            <div class="concept-card bg-gray-50 rounded-3xl border border-gray-100 shadow-sm relative overflow-hidden transition-all duration-300">
+                <button onclick="toggleConcept(this)" class="w-full text-left p-6 flex items-center justify-between z-10 relative cursor-pointer focus:outline-none group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl font-black text-blue-200 group-hover:text-blue-400 transition-colors">02</span>
+                        <h3 class="text-lg font-bold text-slate-900">Supervisión Continua</h3>
+                    </div>
+                    <div class="concept-icon w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 transition-colors duration-300">
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                </button>
+                <div class="concept-content hidden px-6 pb-6 animate-fade-in">
+                    <p class="text-gray-600 text-sm border-t border-gray-200 pt-4">En KMAN Multiservicios, aseguramos el uso de maquinaria especializada y productos de la más alta eficacia, seleccionados meticulosamente para cada tipo de intervención. Entregamos soluciones innovadoras que se ajustan con precisión a las necesidades de sus instalaciones.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 03 -->
+            <div class="concept-card bg-gray-50 rounded-3xl border border-gray-100 shadow-sm relative overflow-hidden transition-all duration-300">
+                <button onclick="toggleConcept(this)" class="w-full text-left p-6 flex items-center justify-between z-10 relative cursor-pointer focus:outline-none group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl font-black text-blue-200 group-hover:text-blue-400 transition-colors">03</span>
+                        <h3 class="text-lg font-bold text-slate-900">Presupuesto a la Medida</h3>
+                    </div>
+                    <div class="concept-icon w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 transition-colors duration-300">
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                </button>
+                <div class="concept-content hidden px-6 pb-6 animate-fade-in">
+                    <p class="text-gray-600 text-sm border-t border-gray-200 pt-4">Coordinamos una visita técnica a sus instalaciones para evaluar las áreas a intervenir y confeccionar una propuesta económica transparente, competitiva y ajustada a sus requerimientos reales.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 04 -->
+            <div class="concept-card bg-gray-50 rounded-3xl border border-gray-100 shadow-sm relative overflow-hidden transition-all duration-300">
+                <button onclick="toggleConcept(this)" class="w-full text-left p-6 flex items-center justify-between z-10 relative cursor-pointer focus:outline-none group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl font-black text-blue-200 group-hover:text-blue-400 transition-colors">04</span>
+                        <h3 class="text-lg font-bold text-slate-900">Personal Calificado</h3>
+                    </div>
+                    <div class="concept-icon w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 transition-colors duration-300">
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                </button>
+                <div class="concept-content hidden px-6 pb-6 animate-fade-in">
+                    <p class="text-gray-600 text-sm border-t border-gray-200 pt-4">Contamos con un equipo experimentado y en continua capacitación para cada área operativa. Durante la prestación del servicio, mantenemos un canal de comunicación directa con el cliente y un control riguroso para asegurar un desarrollo impecable de los trabajos.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 05 -->
+            <div class="concept-card bg-gray-50 rounded-3xl border border-gray-100 shadow-sm relative overflow-hidden transition-all duration-300">
+                <button onclick="toggleConcept(this)" class="w-full text-left p-6 flex items-center justify-between z-10 relative cursor-pointer focus:outline-none group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl font-black text-blue-200 group-hover:text-blue-400 transition-colors">05</span>
+                        <h3 class="text-lg font-bold text-slate-900">Optimización de Costos</h3>
+                    </div>
+                    <div class="concept-icon w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 transition-colors duration-300">
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                </button>
+                <div class="concept-content hidden px-6 pb-6 animate-fade-in">
+                    <p class="text-gray-600 text-sm border-t border-gray-200 pt-4">Estructuramos presupuestos acordes a sus necesidades específicas, supervisando activamente que cada tarea se ejecute en el tiempo previsto y cumpliendo con las expectativas acordadas.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 06 -->
+            <div class="concept-card bg-gray-50 rounded-3xl border border-gray-100 shadow-sm relative overflow-hidden transition-all duration-300">
+                <button onclick="toggleConcept(this)" class="w-full text-left p-6 flex items-center justify-between z-10 relative cursor-pointer focus:outline-none group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl font-black text-blue-200 group-hover:text-blue-400 transition-colors">06</span>
+                        <h3 class="text-lg font-bold text-slate-900">Eficiencia y Compromiso</h3>
+                    </div>
+                    <div class="concept-icon w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 transition-colors duration-300">
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                </button>
+                <div class="concept-content hidden px-6 pb-6 animate-fade-in">
+                    <p class="text-gray-600 text-sm border-t border-gray-200 pt-4">Nos distinguimos por nuestra rapidez de respuesta, nivel de profesionalismo y sólida experiencia en el sector de mantenimiento y servicios, garantizando resultados duraderos en cada proyecto.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta 07 -->
+            <div class="concept-card bg-gray-50 rounded-3xl border border-gray-100 shadow-sm relative overflow-hidden transition-all duration-300 lg:col-start-2">
+                <button onclick="toggleConcept(this)" class="w-full text-left p-6 flex items-center justify-between z-10 relative cursor-pointer focus:outline-none group">
+                    <div class="flex items-center gap-4">
+                        <span class="text-3xl font-black text-blue-200 group-hover:text-blue-400 transition-colors">07</span>
+                        <h3 class="text-lg font-bold text-slate-900">Asesoramiento Exclusivo</h3>
+                    </div>
+                    <div class="concept-icon w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 transition-colors duration-300">
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                </button>
+                <div class="concept-content hidden px-6 pb-6 animate-fade-in">
+                    <p class="text-gray-600 text-sm border-t border-gray-200 pt-4">En <strong>KMAN Multiservicios</strong> estamos a su disposición para ampliar cualquier información o diseñar un plan de mantenimiento adaptado a su empresa. Contáctenos para coordinar una evaluación técnica de sus instalaciones.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    
+    <!-- <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl lg:text-4xl font-black text-slate-900 mb-4">Conceptos de Nuestros Servicios</h2>
@@ -567,7 +703,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 <!-- Sección de Galería de Proyectos / Trabajos Realizados -->
 <section id="galeria" class="py-24 bg-slate-50">
@@ -1108,6 +1244,46 @@
         btnElement.classList.remove('bg-slate-50', 'text-slate-600');
         btnElement.classList.add('bg-blue-600', 'text-white', 'shadow-lg');
     }
+
+
+//logica de conceptos 
+
+function toggleConcept(btn) {
+        const card = btn.closest('.concept-card');
+        const content = card.querySelector('.concept-content');
+        const iconContainer = card.querySelector('.concept-icon');
+        const icon = iconContainer.querySelector('i');
+
+        // Cierra todas las demás tarjetas para mantener el diseño compacto
+        document.querySelectorAll('.concept-card').forEach(c => {
+            if (c !== card) {
+                c.querySelector('.concept-content').classList.add('hidden');
+                c.classList.replace('bg-white', 'bg-gray-50');
+                c.classList.remove('border-blue-200', 'shadow-md');
+                c.querySelector('.concept-icon').classList.replace('bg-blue-600', 'bg-blue-100');
+                c.querySelector('.concept-icon').classList.replace('text-white', 'text-blue-600');
+                c.querySelector('i').style.transform = 'rotate(0deg)';
+            }
+        });
+
+        // Alterna el estado de la tarjeta clickeada
+        if (content.classList.contains('hidden')) {
+            content.classList.remove('hidden');
+            card.classList.replace('bg-gray-50', 'bg-white');
+            card.classList.add('border-blue-200', 'shadow-md');
+            iconContainer.classList.replace('bg-blue-100', 'bg-blue-600');
+            iconContainer.classList.replace('text-blue-600', 'text-white');
+            icon.style.transform = 'rotate(180deg)';
+        } else {
+            content.classList.add('hidden');
+            card.classList.replace('bg-white', 'bg-gray-50');
+            card.classList.remove('border-blue-200', 'shadow-md');
+            iconContainer.classList.replace('bg-blue-600', 'bg-blue-100');
+            iconContainer.classList.replace('text-white', 'text-blue-600');
+            icon.style.transform = 'rotate(0deg)';
+        }
+    }
+
 
     </script>
 </body>
